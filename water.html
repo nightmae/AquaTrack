@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="water.css">
+    <title>H2O Intake</title>
+</head>
+<body>  
+
+<div class="wrapper">
+  <div class="Trivia">
+    <span class="TriviaTitle">Trivia</span>
+  </div>
+  <div class="sidebar">
+    <span class="closeBtn">X</span>
+    <header>Water</header>
+    <p class="wiki">Sourced from <a href="https://en.wikipedia.org/wiki/Water">Wikipedia</a></p>
+    <p>Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance, and it is the main constituent of Earth's hydrosphere and the fluids of all known living organisms (in which it acts as a solvent[1]). It is vital for all known forms of life, despite not providing food, energy or organic micronutrients. Its chemical formula, H2O, indicates that each of its molecules contains one oxygen and two hydrogen atoms, connected by covalent bonds. The hydrogen atoms are attached to the oxygen atom at an angle of 104.45°.[2] "Water" is also the name of the liquid state of H2O at standard temperature and pressure.</p>
+    <p>Because Earth's environment is relatively close to water's triple point, water exists on earth as a solid, liquid, and gas.[3] It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor.</p>
+    <p>Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume on earth (about 96.5%).[4] Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%).[5][6] Water moves continually through the water cycle of evaporation, transpiration (evapotranspiration), condensation, precipitation, and runoff, usually reaching the sea.</p>
+    <p>Water plays an important role in the world economy. Approximately 70% of the freshwater used by humans goes to agriculture.[7] Fishing in salt and fresh water bodies has been, and continues to be, a major source of food for many parts of the world, providing 6.5% of global protein.[8] Much of the long-distance trade of commodities (such as oil, natural gas, and manufactured products) is transported by boats through seas, rivers, lakes, and canals. Large quantities of water, ice, and steam are used for cooling and heating, in industry and homes. Water is an excellent solvent for a wide variety of substances both mineral and organic; as such it is widely used in industrial processes, and in cooking and washing. Water, ice and snow are also central to many sports and other forms of entertainment, such as swimming, pleasure boating, boat racing, surfing, sport fishing, diving, ice skating and skiing.    </p>
+  </div>
+  <script src="triviaPanel.js"></script>
+</div>
+
+    <div class="container">
+        <span>Another thing by Admir-Mihajlo Bauermeister</span>
+        <label class="water-intake-label" for="intakeInput">Enter Water Intake (L)</label><br>
+        <div class="inputs">
+            <input type="text" placeholder="H2O Intake" id="intakeInput">
+            <button id="submitBtn">Submit Intake</button>
+        </div>
+        <div class="results">
+            <span class="hello" id="hello"></span><br>
+            <span class="result-label" id="result-label">Your results are:</span>
+            <ul>
+                <li>Total water intake for the day: <span id="total-intake"></span></li>
+                <li>Average water intake per hour: <span id="intake-per-hour"></span></li>
+                <li>Daily water intake recommendation for your age and gender: <span id="daily-water"></span></li>
+                <li>Comparison of water intake to previous days' intake: <span id="intake-comparison"></span></li>
+                <li>Graph of water intake over time to track progress: <span id="intake-graph"></span></li>
+            </ul>
+            <div class="graph" id="graph"></div>
+        </div>
+        <script src="water.js"></script>
+      </div>
+
+</body>
+</html>

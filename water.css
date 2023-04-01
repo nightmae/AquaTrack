@@ -1,0 +1,310 @@
+:root {
+    --nothing: white;
+}
+body {
+    font-family: Poppins, Montserrat;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1620121478247-ec786b9be2fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(27, 29, 33, 0.6)
+  }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color:rgb(187, 186, 186);
+}
+
+.water-intake-label {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intakeInput {
+    position:Relative;
+    top: 5vh;
+    color: white;
+    background-color: rgb(62, 54, 54);
+    padding: 10px;
+    width: 20%;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+    width: 55%;
+}
+
+#intakeInput::placeholder {
+    color: white;
+}
+
+#submitBtn {
+    position:Relative;
+    top: 5vh;
+    color: white;
+    background-color: rgb(62, 54, 54);
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+#submitBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  #intakeInput:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+.results {
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+}
+
+#hello {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#result-label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.results ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    list-style:none;
+}
+
+.TriviaTitle {
+    position:relative;
+    color:white;
+    top: 20px;
+    font-size: 30px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 12px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.TriviaTitle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+.sidebar {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 0;
+    background-color: #d8d8d8;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: auto;
+}
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    }
+
+  .sidebar.active {  
+    width: 300px;
+  }
+  .sidebar header {
+    text-align:Center;
+    font-size: 28px;
+    padding: 6px;
+    display:none;
+  }
+  .sidebar.active header {
+    display:block;
+  }
+  .sidebar .wiki {
+    text-align:Center;
+    margin-top: -15px;
+    padding: 10px;
+    color: #000000;
+    display:none;
+  }
+  .sidebar.active .wiki {
+    display:block;
+  }
+  .sidebar p {
+    text-align:left;
+    margin-top: -15px;
+    padding: 10px;
+    color: #000000;
+    display:none;
+  }
+  .sidebar.active p {
+    display:block;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #bebebe;
+    background-color:rgb(195, 59, 59);
+    padding: 12px;
+    border-radius: 10%;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidebar.active .closeBtn {
+    left: 0px;
+  }
+  
+  .closeBtn:hover {
+    opacity: 0.7;
+  }
+  
+
+/* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF */
+/* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF */
+/* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF *//* LAME STUFF */
+
+.graph-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    position: relative;
+  }
+    
+  #intake-graph {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  .bar {
+    width: 10px;
+    margin-right: 5px;
+    background-color: #00bfff;
+    transition: height 0.2s ease-out;
+  }
+  
+  .bar:hover {
+    height: calc(var(--max-height) * 1.2);
+    cursor: pointer;
+  }
+  
+  .legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .average {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 767px) {
+    .container {
+    padding: 20px;
+    }
+    
+    .water-intake-label {
+    font-size: 28px;
+    margin-bottom: 10px;
+    }
+    
+    #intakeInput {
+    top: 0;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    
+    #submitBtn {
+    top: 0;
+    width: 100%;
+    }
+    
+    .results {
+    margin-top: 30px;
+    margin-left: 0;
+    }
+    
+    #hello {
+    font-size: 22px;
+    margin-bottom: 5px;
+    }
+    
+    #result-label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    }
+    
+    .results ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    }
+    
+    .graph-container {
+    height: 300px;
+    }
+    }
